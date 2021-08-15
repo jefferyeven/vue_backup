@@ -31,4 +31,24 @@ public class TestController {
 }
 ```
 
+## 热部署时
+```
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        
+        <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <executable>true</executable>
+                </configuration>
+            </plugin>
+```
+
+![image](https://user-images.githubusercontent.com/71508752/129476210-88d3c3c2-3fc6-4925-a145-b8d8cfd9d231.png)
+
 # 
